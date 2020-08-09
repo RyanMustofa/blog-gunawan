@@ -1,0 +1,197 @@
+.navbar {
+    padding-top: 2rem;
+    transition: 1s;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-item:hover {
+    color: #000;
+    font-weight: 400;
+}
+.navbar .nav-item:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid blue;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#hero {
+    padding-top: 8rem;
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 172, 217, 0.62),
+            rgba(105, 240, 174, 0.52)
+        ),
+        url(https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 550px;
+}
+
+#hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #ffffff;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#hero .row .img-fluid {
+    z-index: 1;
+    position: relative;
+}
+#hero .row .tombol {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-radius: 2rem;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+#hero .row .tombol:hover {
+    background-color: #ffffff;
+    color: #03bad5;
+    transition: 0.3s;
+}
+#about {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+#about .section-title {
+    margin-bottom: 2rem;
+    position: relative;
+}
+#about .section-title-heading {
+    font-weight: 800;
+    font-size: 2rem;
+}
+#about .section-title::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #03bad5;
+    width: 8%;
+    top: 50px;
+}
+#about .section-title:hover::after {
+    content: "";
+    transition: all 0.6s ease-out;
+    width: 12%;
+}
+#about .fas {
+    color: #03bad5;
+}
+#about .row h3 {
+    font-weight: 600;
+}
+#about .row p {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+    #hero .row h1 {
+        font-weight: 800;
+        padding-bottom: 1.2rem;
+    }
+    #hero .row p {
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+    #about {
+        margin-top: 5rem;
+    }
+}
+#hero .row h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+#hero .row p {
+    color: #ffffff;
+    font-size: 0.1rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+#download{
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 172, 217, 0.62),
+            rgba(105, 240, 174, 0.52)
+        ),
+        url(https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; position: relative;
+    padding-top: 10rem;
+    height: 650px;
+    text-align: center;
+}
+#download::before{
+    content:'';
+    width: 100%;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background-color: #ffffff;
+    position: absolute;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+}
+#download::after{
+    content:'';
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 15%;
+    bottom: 0;
+    background-color: #ffffff;
+    position: absolute;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+}
+#download h2{
+    font-weight: 700;
+    color: #ffffff;
+}
+#download p{
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+#download .google{
+    z-index: 1;
+    position: relative;
+}
+.scrolled{
+    background-color: rgba(0, 172, 217, 0.62);
+    color: #ffffff;
+    padding-top:0;
+}
+#footer{
+    margin-top: 8rem;
+    background: rgba(0,0,0,0.7);
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+#footer h4{
+    color: #ffffff;
+    font-weight: 500;
+}
+#footer .fab{
+    color: #ffffff;
+    font-weight: 200;
+}
